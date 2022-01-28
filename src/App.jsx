@@ -17,7 +17,7 @@ function App() {
     }));
   };
 
-  // load PPP1 data by defaiult on page load
+  // load PPP1 data by default on pagw load
   useEffect(() => {
     axios
       .get(`http://localhost:8081/data/${ppp}`)
@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Poverty Measures by Gender</h1>
+      <h1>Poverty Measures by Gender in Nigeria (2012)</h1>
       <main>
         <Dropdown setPpp={setPpp} />
         <PovertyChart graphData={graphData} />
