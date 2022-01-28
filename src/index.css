@@ -49,7 +49,7 @@ main {
 
 #dropdown-section {
   border: solid white 2px;
-  width: 20vw;
+  width: 30vw;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -64,4 +64,10 @@ button {
   border-radius: 5px;
   height: 45px;
   padding: 5px;
+}
+
+div#dropdown-text {
+  text-align: left;
+  font-size: 15px;
+  padding: 10px;
 }

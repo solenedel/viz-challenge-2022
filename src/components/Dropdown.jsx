@@ -10,8 +10,12 @@ const Dropdown = ({ setPpp }) => {
       <button type="button" onClick={() => setPpp("ppp2")}>
         $3.10/day (2011 ppp)
       </button>
-      <div id="dropdown-text">About this graph.</div>
-      {/* {data.length && console.log("DATA STATE: ", data[0].gender)} */}
+      <div id="dropdown-text">
+        This graph shows 3 measures of Poverty: Severity Ratio, Poverty Gap and
+        Headcount Ratio for males and females in Nigeria (2012). Hover on the
+        bars to see values. Change the wage to see the difference between PPP1
+        and PPP2.
+      </div>
     </div>
   );
 };
