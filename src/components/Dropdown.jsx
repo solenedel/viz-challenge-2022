@@ -1,13 +1,13 @@
 import React from "react";
 
-const Dropdown = ({ getData }) => {
+const Dropdown = ({ setPpp }) => {
   // TODO - refactor getData to make more modular if time
   return (
     <div id="dropdown-section">
-      <button type="button" onClick={() => getData("ppp1")}>
+      <button type="button" onClick={() => setPpp("ppp1")}>
         $1.90/day (2011 ppp)
       </button>
-      <button type="button" onClick={() => getData("ppp2")}>
+      <button type="button" onClick={() => setPpp("ppp2")}>
         $3.10/day (2011 ppp)
       </button>
       <div id="dropdown-text">About this graph.</div>

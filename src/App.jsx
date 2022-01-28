@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import PovertyChart from "./components/PovertyChart";
 import Dropdown from "./components/Dropdown";
 
 function App() {
   const [graphData, setGraphData] = useState([]);
+  const [ppp, setPpp] = useState("ppp1");
 
   // format data to be graphed
   const formatDataToGraph = (data) => {
@@ -16,8 +17,8 @@ function App() {
     }));
   };
 
-  // request data for ppp1 OR ppp2 from backend
-  const getData = (ppp) => {
+  // load PPP1 data by defaiult on page load
+  useEffect(() => {
     axios
       .get(`http://localhost:8081/data/${ppp}`)
       .then((res) => {
@@ -28,12 +29,13 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
-  };
+  }, [ppp]);
+
   return (
     <div className="App">
       <h1>Poverty Measures by Gender</h1>
       <main>
-        <Dropdown getData={getData} />
+        <Dropdown setPpp={setPpp} />
         <PovertyChart graphData={graphData} />
       </main>
       {graphData.length && console.log("graphData formatted:", graphData)}
