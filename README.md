@@ -2,7 +2,7 @@
 
 ## Running the project
 
-**NOTE:** this project uses a Postgres database. A SQL dump file cna be found in the root of the project directory.
+**NOTE:** this project uses a Postgres database. A SQL dump file can be found in the root of the project directory.
 
 From the root directory: 
 - **To run the back end:** `npm run start-backend`
