@@ -8,16 +8,19 @@ const Dropdown = ({ setPpp }) => {
       <div className="dropdown">
         <label htmlFor="ppp1">$1.90/day (2011 ppp)</label>
         <input
-          type="checkbox"
+          type="radio"
           id="ppp1"
-          name="ppp1"
+          name="ppp"
+          value="ppp1"
+          defaultChecked
           onClick={() => setPpp("ppp1")}
         />
         <label htmlFor="ppp1">$3.10/day (2011 ppp)</label>
         <input
-          type="checkbox"
-          id="ppp1"
-          name="ppp1"
+          type="radio"
+          id="ppp2"
+          name="ppp"
+          value="ppp2"
           onClick={() => setPpp("ppp2")}
         />
       </div>
