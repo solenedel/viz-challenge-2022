@@ -11,9 +11,9 @@ function App() {
   const formatDataToGraph = (data) => {
     return data.map((item) => ({
       ...item,
-      sevpov: (Number(item.sevpov) * 100).toFixed(2),
-      povgap: (Number(item.povgap) * 100).toFixed(2),
-      hc: (Number(item.hc) * 100).toFixed(2),
+      severity: (Number(item.sevpov) * 100).toFixed(2),
+      poverty_gap: (Number(item.povgap) * 100).toFixed(2),
+      headcount: (Number(item.hc) * 100).toFixed(2),
     }));
   };
 

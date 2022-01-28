@@ -8,9 +8,9 @@ const PovertyChart = ({ graphData }) => {
       <YAxis />
       <Tooltip />
       <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
-      <Bar dataKey="sevpov" fill="#8884d8" barSize={30} />
-      <Bar dataKey="povgap" fill="#84d8b5" barSize={30} />
-      <Bar dataKey="hc" fill="#c7d884" barSize={30} />
+      <Bar dataKey="severity" fill="#8884d8" barSize={30} />
+      <Bar dataKey="poverty_gap" fill="#e9aa97" barSize={30} />
+      <Bar dataKey="headcount" fill="#84d8bc" barSize={30} />
     </BarChart>
   );
 };

@@ -31,10 +31,10 @@ const Dropdown = ({ setPpp }) => {
       </div>
 
       <div id="dropdown-text">
-        This graph shows 3 measures of Poverty: Severity Ratio, Poverty Gap and
-        Headcount Ratio for males and females in Nigeria (2012). Hover on the
-        bars to see values. Change the wage to see the difference between PPP1
-        and PPP2.
+        This graph shows 3 measures of Poverty for males and females in Nigeria
+        (2012); <strong>Severity Ratio</strong>, <strong>Poverty Gap</strong>{" "}
+        and <strong>Headcount Ratio</strong>, each measured in percentage (%).
+        Hover on the bars to see values. Toggle the wage between two PPP values.
       </div>
     </div>
   );
