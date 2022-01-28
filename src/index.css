@@ -67,7 +67,13 @@ div#dropdown-text {
   font-size: 15px;
   padding: 10px;
 }
+
+div.dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
 input {
-  
+  margin-right: 10px;
 }
 
