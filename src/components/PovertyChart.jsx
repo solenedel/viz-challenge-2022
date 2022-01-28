@@ -11,7 +11,6 @@ const PovertyChart = ({ graphData }) => {
       <Bar dataKey="sevpov" fill="#8884d8" barSize={30} />
       <Bar dataKey="povgap" fill="#84d8b5" barSize={30} />
       <Bar dataKey="hc" fill="#c7d884" barSize={30} />
-      {graphData.length && console.log("FORMATTED DATA: ", graphData)}
     </BarChart>
   );
 };
