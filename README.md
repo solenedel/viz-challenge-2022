@@ -4,7 +4,7 @@
 
 In the main project directory: 
 
-NOTE: this project uses a Postgres database. Create a database locally called povertydata, then run ths schema and seeds file in the project directory.
+**NOTE:** this project uses a Postgres database. Create a database locally called povertydata, then run the schema and seeds files in the project directory.
 
 - **To run the back end:** `npm run start-backend`
 

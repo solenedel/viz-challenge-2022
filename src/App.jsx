@@ -7,7 +7,7 @@ function App() {
   const [graphData, setGraphData] = useState([]);
   const [ppp, setPpp] = useState("ppp1");
 
-  // format data to be graphed
+  // format data to be graphed, removing unused fields
   const formatDataToGraph = (data) => {
     return data.map((item) => ({
       gender: item.gender,
@@ -22,7 +22,6 @@ function App() {
     axios
       .get(`http://localhost:8081/data/${ppp}`)
       .then((res) => {
-        formatDataToGraph(res.data);
         const formattedData = formatDataToGraph(res.data);
         setGraphData([...formattedData]);
       })
