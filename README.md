@@ -1,11 +1,10 @@
-# Data visualization challenge 
+# 📊 Data visualization challenge 
 
 ## Running the project
 
-In the main project directory: 
+**NOTE:** this project uses a Postgres database. A SQL dump file cna be found in the root of the project directory.
 
-**NOTE:** this project uses a Postgres database. Create a database locally called povertydata, then run the schema and seeds files in the project directory.
-
+From the root directory: 
 - **To run the back end:** `npm run start-backend`
 
 - **To run the front end:** `npm run start-frontend`
