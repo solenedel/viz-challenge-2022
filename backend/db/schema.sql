@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS povertydata CASCADE;
+DROP TABLE IF EXISTS poverty CASCADE;
 
 
 CREATE TABLE poverty (
@@ -10,5 +10,5 @@ CREATE TABLE poverty (
   hc DECIMAL(7,6) NOT NULL,
   poverty_level VARCHAR(255) NOT NULL,
   gender VARCHAR(255) NOT NULL,
-  povgap  sevpov DECIMAL(7,6) NOT NULL
+  povgap DECIMAL(7,6) NOT NULL
 );
