@@ -3,7 +3,7 @@ import React from "react";
 const Dropdown = ({ setPpp }) => {
   return (
     <div id="dropdown-section">
-      <h2>Wage</h2>
+      <h2>Wage (2011 ppp)</h2>
       <div className="dropdown">
         <span>
           <input
@@ -14,7 +14,7 @@ const Dropdown = ({ setPpp }) => {
             defaultChecked
             onClick={() => setPpp("ppp1")}
           />
-          <label htmlFor="ppp1">$1.90/day (2011 ppp)</label>
+          <label htmlFor="ppp1">$1.90/day</label>
         </span>
         <span>
           {" "}
@@ -25,7 +25,7 @@ const Dropdown = ({ setPpp }) => {
             value="ppp2"
             onClick={() => setPpp("ppp2")}
           />
-          <label htmlFor="ppp1">$3.10/day (2011 ppp)</label>
+          <label htmlFor="ppp1">$3.10/day</label>
         </span>
       </div>
 
