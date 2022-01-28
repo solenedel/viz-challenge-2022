@@ -10,7 +10,7 @@ function App() {
   // format data to be graphed
   const formatDataToGraph = (data) => {
     return data.map((item) => ({
-      ...item,
+      gender: item.gender,
       severity: (Number(item.sevpov) * 100).toFixed(2),
       poverty_gap: (Number(item.povgap) * 100).toFixed(2),
       headcount: (Number(item.hc) * 100).toFixed(2),
