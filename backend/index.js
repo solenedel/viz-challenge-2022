@@ -1,7 +1,6 @@
 const PORT = 8081;
 const express = require("express");
 const cors = require("cors");
-const axios = require("axios");
 const { Pool } = require("pg");
 
 let dotenvPath = "./.env";
@@ -34,13 +33,30 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-// ---------------------ROUTES------------------------ //
+// --------------------- ROUTES ------------------------ //
 
 // test request to database
-app.get("/test", (req, res) => {
-  const queryText = `SELECT * FROM poverty;`;
+// app.get("/test", (req, res) => {
+//   const queryText = `SELECT * FROM poverty;`;
 
-  db.query(queryText)
+//   db.query(queryText)
+//     .then((results) => {
+//       res.json(results.rows);
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//       res.json([]);
+//     });
+// });
+
+// request for ppp data
+app.get(`/data/:ppp`, (req, res) => {
+  const queryText = `SELECT * FROM poverty
+                     WHERE poverty_level = $1;`;
+
+  const values = [req.params.ppp];
+
+  db.query(queryText, values)
     .then((results) => {
       res.json(results.rows);
     })
@@ -49,7 +65,6 @@ app.get("/test", (req, res) => {
       res.json([]);
     });
 });
-
 
 // -------------------------------------------------- //
 app.listen(PORT, () => {
