@@ -11,13 +11,13 @@ function App() {
   const formatDataToGraph = (data) => {
     return data.map((item) => ({
       gender: item.gender,
-      severity: (Number(item.sevpov) * 100).toFixed(2),
-      poverty_gap: (Number(item.povgap) * 100).toFixed(2),
-      headcount: (Number(item.hc) * 100).toFixed(2),
+      severity: (Number(item.sevpov) * 100).toFixed(0),
+      poverty_gap: (Number(item.povgap) * 100).toFixed(0),
+      headcount: (Number(item.hc) * 100).toFixed(0),
     }));
   };
 
-  // load PPP1 data by default on pagw load
+  // load PPP1 data by default on page load
   useEffect(() => {
     axios
       .get(`http://localhost:8081/data/${ppp}`)

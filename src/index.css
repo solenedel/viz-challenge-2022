@@ -33,8 +33,10 @@ a, a:hover, a:visited {
 
 h1 {
   margin-top: 55px;
+  font-size: 35;
   color: #95cbb9;
   font-weight: 600;
+  text-align: center;
 }
 
 h2 {
@@ -88,4 +90,3 @@ span.bold-text {
   font-weight: 700;
   color: #bfa8f5;
 }
-

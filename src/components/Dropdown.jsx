@@ -3,7 +3,7 @@ import React from "react";
 const Dropdown = ({ setPpp }) => {
   return (
     <div id="dropdown-section">
-      <h2>Wage (2011 ppp)</h2>
+      <h2>Wage (2011 PPP)</h2>
       <div className="dropdown">
         <span>
           <input
@@ -30,12 +30,12 @@ const Dropdown = ({ setPpp }) => {
       </div>
 
       <div id="dropdown-text">
-        This graph shows 3 different measures of poverty by gender in Nigeria
+        This chart shows 3 different metrics of poverty by gender in Nigeria
         (2012); <span className="bold-text">Severity Ratio</span>,{" "}
-        <span className="bold-text">Poverty Gap</span> and{" "}
+        <span className="bold-text">Poverty Gap Ratio</span> and{" "}
         <span className="bold-text">Headcount Ratio</span>, each measured in
-        percentage (%). Hover on the bars to see values. Toggle the wage between
-        two PPP values.
+        percentage (%). Hover on the bars to see exact values. Toggle the wage
+        to see the difference between two PPP (Purchasing Power Parity) values.
       </div>
     </div>
   );
