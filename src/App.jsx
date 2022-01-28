@@ -1,11 +1,15 @@
-import React, { useEffect } from "react";
-import axios from "axios";
+import React from "react";
+import BarChart from "./components/BarChart";
+import Dropdown from "./components/Dropdown";
 
 function App() {
-
   return (
     <div className="App">
-      <h3>Viz challenge</h3>
+      <h1>Poverty Measures by Gender</h1>
+      <main>
+        <Dropdown />
+        <BarChart />
+      </main>
     </div>
   );
 }
