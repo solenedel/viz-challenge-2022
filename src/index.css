@@ -34,6 +34,7 @@ a, a:hover, a:visited {
 h1 {
   margin-top: 50px;
   color: #95cbb9;
+  font-weight: 600;
 }
 
 h2 {

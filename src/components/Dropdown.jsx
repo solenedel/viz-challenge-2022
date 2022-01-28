@@ -1,7 +1,6 @@
 import React from "react";
 
 const Dropdown = ({ setPpp }) => {
-  // TODO - refactor getData to make more modular if time
   return (
     <div id="dropdown-section">
       <h2>Wage</h2>

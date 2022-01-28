@@ -33,10 +33,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Poverty Measures by Gender in Nigeria (2012)</h1>
+      <h1>Poverty Measures by Gender (Nigeria, 2012)</h1>
       <main>
         <Dropdown setPpp={setPpp} />
-        <PovertyChart graphData={graphData} />
+        <div style={{ width: "50vw", height: "500px" }}>
+          <PovertyChart graphData={graphData} />
+        </div>
       </main>
     </div>
   );
