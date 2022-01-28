@@ -1,3 +1,4 @@
+import { isLabelWithInternallyDisabledControl } from "@testing-library/user-event/dist/utils";
 import React from "react";
 import {
   BarChart,
@@ -14,7 +15,14 @@ const PovertyChart = ({ graphData }) => {
     <ResponsiveContainer width="99%" height={400}>
       <BarChart width={600} height={300} data={graphData}>
         <XAxis dataKey="gender" stroke="white" />
-        <YAxis />
+        <YAxis
+          label={{
+            value: "Proportion (%)",
+            angle: -90,
+            position: "insideLeft",
+            fill: "#ccc",
+          }}
+        />
         <Tooltip />
         <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
         <Bar dataKey="severity" fill="#8884d8" barSize={30} />
