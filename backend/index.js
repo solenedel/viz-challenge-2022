@@ -36,37 +36,6 @@ app.use(cors(corsOptions));
 
 // ---------------------ROUTES------------------------ //
 
-// test call to get database data
-app.get("/dbtest", (req, res) => {
-  const queryText = `SELECT * FROM users;`;
-
-  db.query(queryText)
-    .then((results) => {
-      res.json(results.rows);
-    })
-    .catch((err) => {
-      console.log(err);
-      res.json([]);
-    });
-});
-
-app.get("/results", (req, res) => {
-  const options = {
-    method: "GET",
-    url: `https://api.nomics.com/v1/exchange-rates?key=${process.env.REACT_APP_NOMICS_API_KEY}`,
-  };
-
-  axios
-    .request(options)
-    .then((response) => {
-      // get only Bitcoin (BTC) data
-      const filteredData = response.data.filter((rates) => {
-        return rates.currency === "BTC";
-      });
-      res.json(filteredData);
-    })
-    .catch((err) => console.error(err));
-});
 
 // -------------------------------------------------- //
 app.listen(PORT, () => {
