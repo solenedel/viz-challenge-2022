@@ -51,7 +51,7 @@ main {
 
 
 #dropdown-section {
-  border: solid white 2px;
+  border: solid #E6E6E6 2px;
   width: 38vw;
   height: fit-content;
   border-radius: 5px;
@@ -68,7 +68,7 @@ div#dropdown-text {
   padding: 20px;
   width: 95%;
   line-height: 35px;
-  color: #84d8bc;
+  color: #95cbb9;
 }
 
 div.dropdown {
@@ -79,5 +79,10 @@ div.dropdown {
 input {
   margin-right: 10px;
   margin-bottom: 20px;
+}
+
+span.bold-text {
+  font-weight: 700;
+  color: #bfa8f5;
 }
 

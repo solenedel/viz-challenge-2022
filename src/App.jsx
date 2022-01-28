@@ -38,7 +38,6 @@ function App() {
         <Dropdown setPpp={setPpp} />
         <PovertyChart graphData={graphData} />
       </main>
-      {graphData.length && console.log("graphData formatted:", graphData)}
     </div>
   );
 }
