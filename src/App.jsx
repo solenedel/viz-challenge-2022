@@ -6,8 +6,8 @@ import Dropdown from "./components/Dropdown";
 function App() {
   const [graphData, setGraphData] = useState([]);
 
+  // format data to be graphed
   const formatDataToGraph = (data) => {
-    // console.log("DATA TO FORMAT:", data);
     return data.map((item) => ({
       ...item,
       sevpov: (Number(item.sevpov) * 100).toFixed(2),
@@ -22,9 +22,8 @@ function App() {
       .get(`http://localhost:8081/data/${ppp}`)
       .then((res) => {
         formatDataToGraph(res.data);
-        console.log("FORMATTED: ", formatDataToGraph(res.data));
-        // setGraphData([...res.data]);
-        // console.log(`DATA for ${ppp} `, res);
+        const formattedData = formatDataToGraph(res.data);
+        setGraphData([...formattedData]);
       })
       .catch((err) => {
         console.log(err);
@@ -37,6 +36,7 @@ function App() {
         <Dropdown getData={getData} />
         <PovertyChart graphData={graphData} />
       </main>
+      {graphData.length && console.log("graphData formatted:", graphData)}
     </div>
   );
 }
