@@ -35,20 +35,6 @@ app.use(cors(corsOptions));
 
 // --------------------- ROUTES ------------------------ //
 
-// test request to database
-// app.get("/test", (req, res) => {
-//   const queryText = `SELECT * FROM poverty;`;
-
-//   db.query(queryText)
-//     .then((results) => {
-//       res.json(results.rows);
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//       res.json([]);
-//     });
-// });
-
 // request for ppp data
 app.get(`/data/:ppp`, (req, res) => {
   const queryText = `SELECT * FROM poverty
