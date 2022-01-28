@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import BarChart from "./components/BarChart";
+import PovertyChart from "./components/PovertyChart";
 import Dropdown from "./components/Dropdown";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       <h1>Poverty Measures by Gender</h1>
       <main>
         <Dropdown getData={getData} />
-        <BarChart />
+        <PovertyChart data={data} />
       </main>
     </div>
   );
