@@ -17,7 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
-  color: white;
+  color: #E6E6E6;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
@@ -37,7 +37,8 @@ h1 {
 
 h2 {
   font-size: 25px;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 main {
@@ -63,9 +64,13 @@ main {
 
 
 div#dropdown-text {
+  margin-top: 30px;
   text-align: left;
-  font-size: 15px;
+  font-size: 20px;
   padding: 10px;
+  width: 100%;
+  line-height: 30px;
+  margin-left: 15px;
 }
 
 div.dropdown {
