@@ -29,5 +29,8 @@ module.exports = {
     "jsx-a11y/click-events-have-key-events": "warn",
     "jsx-a11y/anchor-is-valid": "warn",
     "jsx-a11y/label-has-associated-control": "off",
+    "import/no-dynamic-require": "off",
+    "no-path-concat": "off",
+    "global-require": "off",
   },
 };
