@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const corsOptions = {
-  origin: ORIGIN_URL, // ORIGIN_URL
+  origin: ORIGIN_URL,
 };
 app.use(cors(corsOptions));
 
