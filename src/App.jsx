@@ -32,7 +32,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Poverty Measures by Gender (Nigeria, 2012)</h1>
+      <h1>
+        Poverty Measures by Gender <span>(Nigeria, 2012)</span>
+      </h1>
       <main>
         <Dropdown setPpp={setPpp} />
         <div style={{ width: "50vw", height: "500px" }}>

@@ -39,6 +39,12 @@ h1 {
   text-align: center;
 }
 
+
+ h1 span {
+    font-weight: 300;
+    color: #bfa8f5;
+  }
+
 h2 {
   font-size: 25px;
   margin-top: 15px;
@@ -87,4 +93,9 @@ input {
 span.bold-text {
   font-weight: 700;
   color: #bfa8f5;
+}
+
+
+input[type="radio"]:checked + label {
+  color: #d4c2ff;
 }
